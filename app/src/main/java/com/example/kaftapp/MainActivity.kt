@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             btnSaludar = findViewById(R.id.btnSaludo)
         }
 
+        IniciarComponentes()
+
+
         fun eventosBotones() {
             btnSaludar.setOnClickListener(View.OnClickListener {
                 //declarar variables
@@ -72,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-
+    eventosBotones()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
