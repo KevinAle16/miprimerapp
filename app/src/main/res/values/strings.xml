@@ -5,4 +5,9 @@
     <string name="pulsar">Pulsame</string>
     <string name="limpiar">Limpiar</string>
     <string name="cerrar">Cerrar</string>
+    <string name="miempresa">Servicios Informáticos</string>
+    <string name="alumno">Jose Lopez</string>
+    <string name="matricula">50101233</string>
+    <string name="materia">Desarrollo Móvil</string>
+    <string name="desInaCot">Logo Toyotas</string>
 </resources>
