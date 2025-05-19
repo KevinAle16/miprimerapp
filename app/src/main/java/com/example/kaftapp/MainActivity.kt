@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
-                    strNombre = "Hola" + txtNombre.text.toString() + "Como estas?"
+                    strNombre = "Hola " + txtNombre.text.toString() + " Como estas?"
                     //asignar nombre al editText
                     lblSaludo.text = strNombre
                 }
