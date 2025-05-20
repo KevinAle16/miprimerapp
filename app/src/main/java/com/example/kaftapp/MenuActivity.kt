@@ -47,5 +47,14 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         })
+        crvImc.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this,MainActivityIMC::class.java)
+            startActivity(intent)
+        })
+        crvConversion.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this,MainActivityTemperature::class.java)
+            startActivity(intent)
+        })
+
     }
 }

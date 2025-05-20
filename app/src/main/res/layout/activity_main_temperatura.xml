@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,59 +8,67 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="1dp">
-
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/encabezado"
-            android:paddingBottom="12dp">
+            android:padding="12dp">
 
             <TextView
+                android:id="@+id/txtEncabezado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Práctica IMC"
+                android:text="@string/practica_conversion"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:padding="12dp"
-                android:textStyle="bold"
-                android:id="@+id/txtEncabezado" />
+                android:textStyle="bold" />
         </RelativeLayout>
 
+        <!-- EditText para valor -->
         <EditText
-            android:autofillHints="weight"
-            android:padding="20dp"
-            android:id="@+id/txtPeso"
+            android:id="@+id/txtValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Captura el Peso (kg)"
+            android:hint="@string/hint_valor"
             android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/colorSubTitulo" />
-        <EditText
+
+        <!-- Spinner para unidad origen -->
+        <Spinner
+            android:padding="20dp"
+            android:id="@+id/spinnerUnidadOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Spinner para unidad destino -->
+        <Spinner
             android:autofillHints="height"
             android:padding="20dp"
-            android:id="@+id/txtAltura"
+            android:id="@+id/spinnerUnidadDestino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Captura la Altura (m)"
+            android:layout_marginTop="12dp"
             android:inputType="numberDecimal"
-            android:backgroundTint="@color/colorSubTitulo">
-        </EditText>
+            android:backgroundTint="@color/colorSubTitulo"/>
 
         <TextView
+            android:id="@+id/lblResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/mensaje_resultado"
+            android:text="@string/mensaje_resultado_conversion"
             android:textColor="@color/practica"
-            android:textSize="16dp"
+            android:textSize="18sp"
             android:gravity="center"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="20dp"
-            android:id="@+id/lblResultado">
-        </TextView>
+            android:layout_marginBottom="20dp" />
 
+        <!-- Botones -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,36 +78,34 @@
             android:layout_marginBottom="16dp">
 
             <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/calcular"
                 android:backgroundTint="@color/boton1"
                 android:textColor="@color/white"
-                android:id="@+id/btnCalcular"
-                tools:ignore="ButtonStyle">
-            </Button>
+                android:layout_marginEnd="8dp" />
 
             <Button
                 android:id="@+id/btnLimpiar"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/limpiar"
                 android:backgroundTint="@color/boton2"
                 android:textColor="@color/white"
-                tools:ignore="ButtonStyle">
-            </Button>
+                android:layout_marginEnd="8dp" />
 
             <Button
                 android:id="@+id/btnCerrar"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/cerrar"
-                android:backgroundTint="@color/rojo"
-                android:textColor="@color/black"
-                tools:ignore="ButtonStyle">
-            </Button>
-
+                android:backgroundTint="@color/boton3"
+                android:textColor="@color/white" />
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 </ScrollView>

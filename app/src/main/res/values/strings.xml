@@ -2,12 +2,36 @@
     <string name="app_name">Kaftapp</string>
     <string name="titulo">Mi primer app</string>
     <string name="tunombre">Cual es tu Nombre</string>
+    <string name="miempresa">Servicios Informáticos</string>
+    <string name="alumno">Kevin Alejandro Fuentes Talamantes</string>
+    <string name="matricula">2021030662</string>
+    <string name="materia">Desarrollo Móvil</string>
+    <string name="desInaCot">Logo Toyotas</string>
+    <string name="peso">Ingresa tu peso (kg)</string>
+    <string name="altura">Ingresa tu altura (m)</string>
+    <string name="mensaje_resultado">Su resultado aparecerá aquí</string>
+
     <string name="pulsar">Pulsame</string>
     <string name="limpiar">Limpiar</string>
     <string name="cerrar">Cerrar</string>
-    <string name="miempresa">Servicios Informáticos</string>
-    <string name="alumno">Jose Lopez</string>
-    <string name="matricula">50101233</string>
-    <string name="materia">Desarrollo Móvil</string>
-    <string name="desInaCot">Logo Toyotas</string>
+    <string name="calcular">Calcular</string>
+
+    <string name="practica_conversion">Práctica de Conversión</string>
+    <string name="hint_valor">Ingresa el valor</string>
+    <string name="mensaje_resultado_conversion">El resultado aparecerá aquí</string>
+    <string name="error_valor_invalido">Por favor ingrese un valor válido</string>
+    <string name="mismo_unidad">La unidad de origen y destino no pueden ser iguales</string>
+    <string name="app_conversion">App Conversión</string>
+
+    <string-array name="spinnerUnidadDestino">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string name="resultado_conversion">Resultado: %.2f %s</string>
+
+    <string name="app_conversion_monedas">Conversor de Monedas</string>
+    <string name="mensaje_resultado_moneda">El resultado aparecerá aquí</string>
+    <string name="resultado_moneda">Resultado: %.2f %s</string>
 </resources>
