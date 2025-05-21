@@ -55,6 +55,10 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivityTemperature::class.java)
             startActivity(intent)
         })
+        crvMoneda.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this,MainActivityMoneda::class.java)
+            startActivity(intent)
+        })
 
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,6 +30,7 @@
 
         <!-- EditText para valor -->
         <EditText
+            android:autofillHints="name"
             android:id="@+id/txtValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +87,8 @@
                 android:text="@string/calcular"
                 android:backgroundTint="@color/boton1"
                 android:textColor="@color/white"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/btnLimpiar"
@@ -95,7 +98,8 @@
                 android:text="@string/limpiar"
                 android:backgroundTint="@color/boton2"
                 android:textColor="@color/white"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/btnCerrar"
@@ -104,7 +108,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cerrar"
                 android:backgroundTint="@color/boton3"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
 
     </LinearLayout>

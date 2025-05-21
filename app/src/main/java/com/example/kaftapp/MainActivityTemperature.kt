@@ -2,6 +2,7 @@ package com.example.kaftapp
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -24,6 +25,7 @@ class MainActivityTemperature : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_temperatura)
+
         iniciarComponentes()
         configureSpinners()
         eventosBotones()
@@ -34,7 +36,7 @@ class MainActivityTemperature : AppCompatActivity() {
             insets
         }
     }
-        private fun iniciarComponentes() {
+        fun iniciarComponentes() {
             txtValor = findViewById(R.id.txtValor)
             spinnerUnidadOrigen = findViewById(R.id.spinnerUnidadOrigen)
             spinnerUnidadDestino = findViewById(R.id.spinnerUnidadDestino)
@@ -44,14 +46,14 @@ class MainActivityTemperature : AppCompatActivity() {
             lblResultado = findViewById(R.id.lblResultado)
         }
 
-        private fun configureSpinners() {
+        fun configureSpinners() {
             val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, unidades)
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinnerUnidadOrigen.adapter = adapter
             spinnerUnidadDestino.adapter = adapter
         }
 
-        private fun converterTemperature(valor: Double, origen: String, destino: String): Double {
+        fun converterTemperature(valor: Double, origen: String, destino: String): Double {
             return when (origen to destino) {
                 "Celsius" to "Fahrenheit" -> valor * 9 / 5 + 32
                 "Celsius" to "Kelvin" -> valor + 273.15
@@ -88,16 +90,16 @@ class MainActivityTemperature : AppCompatActivity() {
                     String.format(getString(R.string.resultado_conversion), resultado, destino)
 
 
-                btnLimpiar.setOnClickListener {
+                btnLimpiar.setOnClickListener(View.OnClickListener {
                     txtValor.setText("")
                     spinnerUnidadOrigen.setSelection(0)
                     spinnerUnidadDestino.setSelection(1)
                     lblResultado.text = getString(R.string.mensaje_resultado_conversion)
-                }
-
-                btnCerrar.setOnClickListener {
+                })
+            }
+                btnCerrar.setOnClickListener (View.OnClickListener{
                     val builder = AlertDialog.Builder(this)
-                    builder.setTitle("App IMC")
+                    builder.setTitle("App Conversion Temperatura")
                     builder.setMessage("¿Desea Cerrar la aplicacion?")
 
                     builder.setPositiveButton("Aceptar") { _, _ ->
@@ -110,12 +112,7 @@ class MainActivityTemperature : AppCompatActivity() {
                         Toast.makeText(applicationContext, "Quiza", Toast.LENGTH_SHORT).show()
                     }
                     builder.show()
-                }
-
-
-
-
-
-    }
-}}
+                })
+        }
+}
 
