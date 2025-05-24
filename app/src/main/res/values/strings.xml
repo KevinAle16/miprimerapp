@@ -1,37 +1,96 @@
 <resources>
-    <string name="app_name">Kaftapp</string>
-    <string name="titulo">Mi primer app</string>
-    <string name="tunombre">Cual es tu Nombre</string>
-    <string name="miempresa">Servicios Informáticos</string>
-    <string name="alumno">Kevin Alejandro Fuentes Talamantes</string>
-    <string name="matricula">2021030662</string>
-    <string name="materia">Desarrollo Móvil</string>
-    <string name="desInaCot">Logo Toyotas</string>
-    <string name="peso">Ingresa tu peso (kg)</string>
-    <string name="altura">Ingresa tu altura (m)</string>
-    <string name="mensaje_resultado">Su resultado aparecerá aquí</string>
-
     <string name="pulsar">Pulsame</string>
     <string name="limpiar">Limpiar</string>
     <string name="cerrar">Cerrar</string>
     <string name="calcular">Calcular</string>
 
-    <string name="practica_conversion">Práctica de Conversión</string>
+    <string name="app_name">Kaftapp</string>
+
+    <string name="cardHola">Hola</string>
+    <string name="cardImc">IMC</string>
+    <string name="cardconversi_n">Conversión</string>
+    <string name="cardmonedas">Monedas</string>
+    <string name="cardcotizacion">Cotizacion</string>
+    <string name="cardspinner">Spinner</string>
+
+    <string name="titulo">Mi primer app</string>
+    <string name="tunombre">Cual es tu Nombre</string>
+    <string name="alumno">Kevin Alejandro Fuentes Talamantes</string>
+    <string name="matricula">2021030662</string>
+    <string name="materia">Desarrollo Móvil</string>
+    <string name="imgalum">Mi foto</string>
+
+    <string name="app_imc">Práctica IMC</string>
+    <string name="peso">Ingresa tu peso (kg)</string>
+    <string name="altura">Ingresa tu altura (m)</string>
+    <string name="mensaje_resultado">Su resultado aparecerá aquí</string>
+
+    <string name="app_conversion">Práctica de Conversión</string>
     <string name="hint_valor">Ingresa el valor</string>
     <string name="mensaje_resultado_conversion">El resultado aparecerá aquí</string>
     <string name="error_valor_invalido">Por favor ingrese un valor válido</string>
     <string name="mismo_unidad">La unidad de origen y destino no pueden ser iguales</string>
-    <string name="app_conversion">App Conversión</string>
+    <string name="resultado_conversion">Resultado: %.2f %s</string>
+    <string name="mensaje_resultado_moneda">El resultado aparecerá aquí</string>
 
     <string-array name="spinnerUnidadDestino">
         <item>Celsius</item>
         <item>Fahrenheit</item>
         <item>Kelvin</item>
     </string-array>
+    <string-array name="bicicletas">
+        <item>Bicicleta de montaña</item>
+        <item>Bicicleta de carretera</item>
+        <item>Bicicleta BMX</item>
+    </string-array>
 
-    <string name="resultado_conversion">Resultado: %.2f %s</string>
+    <string name="app_monedas">Práctica de Conversión de monedas</string>
+    <string name="confirmar_cierre">Desea salir?</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cancelado">Cancelado</string>
 
-    <string name="app_conversion_monedas">Conversor de Monedas</string>
-    <string name="mensaje_resultado_moneda">El resultado aparecerá aquí</string>
-    <string name="resultado_moneda">Resultado: %.2f %s</string>
+        <string-array name="monedas">
+            <item>USD</item>
+            <item>EUR</item>
+            <item>JPY</item>
+            <item>GBP</item>
+            <item>AUD</item>
+            <item>CAD</item>
+            <item>CHF</item>
+            <item>CNY</item>
+            <item>SEK</item>
+            <item>NZD</item>
+            <item>MXN</item>
+            <item>INR</item>
+            <item>BRL</item>
+            <item>ZAR</item>
+            <item>RUB</item>
+            <item>KRW</item>
+            <item>SAR</item>
+            <item>NGN</item>
+            <item>IDR</item>
+        </string-array>
+
+        <string name="usd">1.0</string>
+        <string name="eur">0.91</string>
+        <string name="jpy">0.0070</string>
+        <string name="gbp">1.34</string>
+        <string name="aud">0.65</string>
+        <string name="cad">1.34</string>
+        <string name="chf">0.91</string>
+        <string name="cny">7.21</string>
+        <string name="sek">10.40</string>
+        <string name="nzd">1.61</string>
+        <string name="mxn">19.29</string>
+        <string name="inr">82.50</string>
+        <string name="brl">4.96</string>
+        <string name="zar">18.00</string>
+        <string name="rub">77.50</string>
+        <string name="krw">1333.00</string>
+        <string name="sar">3.75</string>
+        <string name="ngn">780.00</string>
+        <string name="idr">15300.00</string>
+    <string name="error_falta_cantidad">Falta capturar la cantidad</string>
+
 </resources>

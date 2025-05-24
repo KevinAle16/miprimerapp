@@ -59,6 +59,10 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivityMoneda::class.java)
             startActivity(intent)
         })
+        crvSpinner.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this,MainActivitySpinner::class.java)
+            startActivity(intent)
+        })
 
     }
 }

@@ -21,14 +21,13 @@
                 android:id="@+id/txtEncabezado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/practica_conversion"
+                android:text="@string/app_conversion"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:padding="12dp"
                 android:textStyle="bold" />
         </RelativeLayout>
 
-        <!-- EditText para valor -->
         <EditText
             android:autofillHints="name"
             android:id="@+id/txtValor"
@@ -40,7 +39,6 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/colorSubTitulo" />
 
-        <!-- Spinner para unidad origen -->
         <Spinner
             android:padding="20dp"
             android:id="@+id/spinnerUnidadOrigen"
@@ -48,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp" />
 
-        <!-- Spinner para unidad destino -->
         <Spinner
             android:autofillHints="height"
             android:padding="20dp"
@@ -70,7 +67,6 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="20dp" />
 
-        <!-- Botones -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -110,7 +106,7 @@
                 android:backgroundTint="@color/boton3"
                 android:textColor="@color/white"
                 tools:ignore="ButtonStyle" />
-        </LinearLayout>
 
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

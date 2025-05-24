@@ -32,9 +32,9 @@
             android:id="@+id/txtValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingrese valor"
+            android:text="@string/hint_valor"
             android:inputType="numberDecimal"
-            android:padding="20dp"
+            android:padding="16dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/colorSubTitulo" />
 
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnCalcular"
-                android:text="Calcular"
+                android:text="@string/calcular"
                 android:backgroundTint="@color/boton1"
                 android:textColor="@color/white"
                 android:layout_marginEnd="8dp"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnLimpiar"
-                android:text="Limpiar"
+                android:text="@string/limpiar"
                 android:backgroundTint="@color/boton2"
                 android:textColor="@color/white"
                 android:layout_marginEnd="8dp" />
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnCerrar"
-                android:text="Cerrar"
+                android:text="@string/cerrar"
                 android:backgroundTint="@color/rojo"
                 android:textColor="@color/white" />
 

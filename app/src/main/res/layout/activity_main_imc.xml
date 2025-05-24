@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Práctica IMC"
+                android:text="@string/app_imc"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="12dp"
@@ -31,31 +31,33 @@
         </RelativeLayout>
 
         <EditText
-            android:autofillHints="weight"
-            android:padding="20dp"
-            android:id="@+id/txtPeso"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Captura el Peso (kg)"
-            android:inputType="numberDecimal"
-            android:backgroundTint="@color/colorSubTitulo" />
-        <EditText
             android:autofillHints="height"
             android:padding="20dp"
             android:id="@+id/txtAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Captura la Altura (m)"
+            android:hint="@string/altura"
             android:inputType="numberDecimal"
-            android:backgroundTint="@color/colorSubTitulo">
-        </EditText>
+            android:backgroundTint="@color/colorSubTitulo"/>
+
+        <EditText
+            android:autofillHints="weight"
+            android:padding="20dp"
+            android:id="@+id/txtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/peso"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/colorSubTitulo" />
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mensaje_resultado"
             android:textColor="@color/practica"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:gravity="center"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="20dp"

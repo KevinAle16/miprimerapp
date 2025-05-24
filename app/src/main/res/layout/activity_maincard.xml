@@ -56,8 +56,8 @@
            <ImageView
                android:layout_width="80sp"
                android:layout_height="80sp"
-               android:contentDescription="@string/desInaCot"
-               android:layout_alignParentRight="true"
+               android:contentDescription="@string/imgalum"
+               android:layout_alignParentEnd="true"
                android:layout_marginRight="11sp"
                android:layout_marginTop="11sp"
                android:src="@drawable/alumno">
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="Hola"
+                        android:text="@string/cardHola"
                         android:textColor="@color/rojo" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -134,7 +134,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="IMC"
+                        android:text="@string/cardImc"
                         android:textColor="@color/rojo" >
                     </TextView>
                 </LinearLayout>
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="Conversión"
+                        android:text="@string/cardconversi_n"
                         android:textColor="@color/rojo" >
                     </TextView>
                 </LinearLayout>
@@ -202,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="Monedas"
+                        android:text="@string/cardmonedas"
                         android:textColor="@color/rojo" >
                     </TextView>
                 </LinearLayout>
@@ -236,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="Cotizacion"
+                        android:text="@string/cardcotizacion"
                         android:textColor="@color/rojo" >
                     </TextView>
                 </LinearLayout>
@@ -270,7 +270,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:layout_marginBottom="10dp"
-                        android:text="Spinner"
+                        android:text="@string/cardspinner"
                         android:textColor="@color/rojo" >
                     </TextView>
                 </LinearLayout>

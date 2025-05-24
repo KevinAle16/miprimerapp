@@ -28,7 +28,6 @@ class MainActivityIMC : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_imc)
 
-
     fun iniciarComponentess() {
         txtPeso = findViewById(R.id.txtPeso) as EditText
         txtAltura = findViewById(R.id.txtAltura) as EditText
@@ -38,7 +37,6 @@ class MainActivityIMC : AppCompatActivity() {
         btnCerrar = findViewById(R.id.btnCerrar)
         lblResultado = findViewById(R.id.lblResultado) as TextView
     }
-
     @SuppressLint("DefaultLocale")
     fun eventosBotoness() {
         btnCalcular.setOnClickListener(View.OnClickListener {
