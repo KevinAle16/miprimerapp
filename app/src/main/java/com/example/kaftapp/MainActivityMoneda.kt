@@ -55,6 +55,7 @@ class MainActivityMoneda : AppCompatActivity() {
         }
 
 
+    @SuppressLint("DiscouragedApi")
     fun eventoClick() {
         spinnerMonedaOrigen.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
@@ -116,8 +117,6 @@ class MainActivityMoneda : AppCompatActivity() {
             }
             dialog.show()
         }
-
-
 
     }
 }
