@@ -50,47 +50,74 @@
     <string name="cancelar">Cancelar</string>
     <string name="cancelado">Cancelado</string>
 
-        <string-array name="monedas">
-            <item>USD</item>
-            <item>EUR</item>
-            <item>JPY</item>
-            <item>GBP</item>
-            <item>AUD</item>
-            <item>CAD</item>
-            <item>CHF</item>
-            <item>CNY</item>
-            <item>SEK</item>
-            <item>NZD</item>
-            <item>MXN</item>
-            <item>INR</item>
-            <item>BRL</item>
-            <item>ZAR</item>
-            <item>RUB</item>
-            <item>KRW</item>
-            <item>SAR</item>
-            <item>NGN</item>
-            <item>IDR</item>
-        </string-array>
+    <string-array name="monedas">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>SEK</item>
+        <item>NZD</item>
+        <item>MXN</item>
+        <item>INR</item>
+        <item>BRL</item>
+        <item>ZAR</item>
+        <item>RUB</item>
+        <item>KRW</item>
+        <item>SAR</item>
+        <item>NGN</item>
+        <item>IDR</item>
+    </string-array>
 
-        <string name="usd">1.0</string>
-        <string name="eur">0.91</string>
-        <string name="jpy">0.0070</string>
-        <string name="gbp">1.34</string>
-        <string name="aud">0.65</string>
-        <string name="cad">1.34</string>
-        <string name="chf">0.91</string>
-        <string name="cny">7.21</string>
-        <string name="sek">10.40</string>
-        <string name="nzd">1.61</string>
-        <string name="mxn">19.29</string>
-        <string name="inr">82.50</string>
-        <string name="brl">4.96</string>
-        <string name="zar">18.00</string>
-        <string name="rub">77.50</string>
-        <string name="krw">1333.00</string>
-        <string name="sar">3.75</string>
-        <string name="ngn">780.00</string>
-        <string name="idr">15300.00</string>
+    <string name="usd">1.0</string>
+    <string name="eur">0.91</string>
+    <string name="jpy">0.0070</string>
+    <string name="gbp">1.34</string>
+    <string name="aud">0.65</string>
+    <string name="cad">1.34</string>
+    <string name="chf">0.91</string>
+    <string name="cny">7.21</string>
+    <string name="sek">10.40</string>
+    <string name="nzd">1.61</string>
+    <string name="mxn">19.29</string>
+    <string name="inr">82.50</string>
+    <string name="brl">4.96</string>
+    <string name="zar">18.00</string>
+    <string name="rub">77.50</string>
+    <string name="krw">1333.00</string>
+    <string name="sar">3.75</string>
+    <string name="ngn">780.00</string>
+    <string name="idr">15300.00</string>
     <string name="error_falta_cantidad">Falta capturar la cantidad</string>
+
+    <string name="Cliente_app">MiAppToyota</string>
+
+    <string name="domicilio">Av. del Mar 1200</string>
+    <string name="ciudad">Mazatlán Sinaloa</string>
+    <string name="marca">Toyota</string>
+    <string name="cliente">Nombre del Cliente</string>
+    <string name="folio">Num. Folio</string>
+    <string name="des">Descripción del Automóvil</string>
+    <string name="precio">Valor del Automóvil</string>
+    <string name="po">Porcentaje de pago Inicial</string>
+    <string name="plazos">Plazos</string>
+    <string name="pmensual">Pago Mensual</string>
+    <string name="pinicial">porcentage Pago Inicial %</string>
+    <string name="tfin">Total a Financiar</string>
+
+
+    <string name="ingresar">Ingresar</string>
+    <string name="regresar">Regresar</string>
+    <string name="calculos">calcular</string>
+
+    <string name="hint_nombre_cliente">Escribe el Nombre del cliente</string>
+
+    <string name="_12_meses">12 Meses</string>
+    <string name="_24_meses">24 Meses</string>
+    <string name="_36_meses">36 Meses</string>
+    <string name="_48_meses">48 Meses</string>
 
 </resources>
