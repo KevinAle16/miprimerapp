@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 
 class ClienteActivity : AppCompatActivity() {
 
@@ -29,13 +31,13 @@ class ClienteActivity : AppCompatActivity() {
             insets
         }
     }
-private fun iniciarComponentes() {
+public fun iniciarComponentes() {
     txtCliente = findViewById(R.id.txtCliente)
-    btnIngresar = findViewById(R.id.btnIngresar)
+    btnIngresar = findViewById(R.id.btnEntrar)
     btnRegresar = findViewById(R.id.btnRegresar)
 }
 
-private fun eventosClic() {
+public fun eventosClic() {
     btnIngresar.setOnClickListener {
         if (txtCliente.text.toString().trim().isEmpty()) {
             Toast.makeText(this, "Falta capturar el nombre del cliente", Toast.LENGTH_SHORT).show()
@@ -48,6 +50,15 @@ private fun eventosClic() {
     }
 
     btnRegresar.setOnClickListener {
-        finish()
+        val dialog = AlertDialog.Builder(this)
+        dialog.setTitle(getString(R.string.login_app))
+        dialog.setMessage(getString(R.string.confirmar_cierre))
+        dialog.setPositiveButton(getString(R.string.aceptar)) { _, _ ->
+            finish()
+        }
+        dialog.setNegativeButton(getString(R.string.cancelar)) { _, _ ->
+            Toast.makeText(this, getString(R.string.cancelado), Toast.LENGTH_SHORT).show()
+        }
+        dialog.show()
     }
 }}

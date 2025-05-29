@@ -42,9 +42,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cotizacion"
+            android:src="@mipmap/cotizacion"
             android:layout_gravity="center"
-            android:paddingBottom="20sp" />
+            android:paddingBottom="20sp"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="match_parent"
@@ -56,15 +57,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="12sp"
             android:paddingBottom="20sp"
             android:textAlignment="center"
             android:id="@+id/txtCliente"
-            android:hint="@string/hint_nombre_cliente" />
+            android:hint="@string/hint_nombre_cliente"
+            tools:ignore="TextFields" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnIngresar"
+            android:id="@+id/btnEntrar"
             android:text="@string/ingresar" />
 
         <Button

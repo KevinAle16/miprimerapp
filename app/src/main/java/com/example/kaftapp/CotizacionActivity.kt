@@ -2,11 +2,13 @@ package com.example.kaftapp
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import kotlin.math.abs
 
 class CotizacionActivity : AppCompatActivity() {
@@ -47,58 +49,57 @@ class CotizacionActivity : AppCompatActivity() {
 
         @SuppressLint("SetTextI18n")
         fun iniciarComponentes() {
-            txtCliente = findViewById(R.id.txtCliente)
-            txtFolio = findViewById(R.id.txtFolio)
-            txtDescripcion = findViewById(R.id.txtDescripcion)
-            txtPorcentaje = findViewById(R.id.txtPorcentaje)
-            txtPrecio = findViewById(R.id.txtPrecio)
+            txtCliente = findViewById(R.id.txtCliente) as TextView
+            txtFolio = findViewById(R.id.txtFolio) as TextView
+            txtDescripcion = findViewById(R.id.txtDescripcion) as EditText
+            txtPorcentaje = findViewById(R.id.txtPorcentaje)  as EditText
+            txtPrecio = findViewById(R.id.txtPrecio) as EditText
 
-            rdb12 = findViewById(R.id.rdb12)
-            rdb24 = findViewById(R.id.rdb24)
-            rdb36 = findViewById(R.id.rdb36)
-            rdb48 = findViewById(R.id.rdb48)
+            rdb12 = findViewById(R.id.rdb12) as RadioButton
+            rdb24 = findViewById(R.id.rdb24) as RadioButton
+            rdb36 = findViewById(R.id.rdb36) as RadioButton
+            rdb48 = findViewById(R.id.rdb48) as RadioButton
 
-            txtPagoInicial = findViewById(R.id.txtPagoInicial)
-            txtTotalFin = findViewById(R.id.txtTotalFin)
-            txtPagoMensual = findViewById(R.id.txtPagoMensual)
+            txtPagoInicial = findViewById(R.id.txtPagoInicial)as TextView
+            txtTotalFin = findViewById(R.id.txtTotalFin)as TextView
+            txtPagoMensual = findViewById(R.id.txtPagoMensual)as TextView
 
-            btnCalcular = findViewById(R.id.btnCalcular)
-            btnLimpiar = findViewById(R.id.btnLimpiar)
-            btnCerrar = findViewById(R.id.btnCerrar)
+            btnCalcular = findViewById(R.id.btnCalcular)as Button
+            btnLimpiar = findViewById(R.id.btnLimpiar)as Button
+            btnCerrar = findViewById(R.id.btnCerrar)as Button
 
-            val strCliente = intent.getStringExtra("cliente").toString()
-            txtCliente.text = strCliente
+            var strCliente: String = intent.getStringExtra("cliente").toString()
+            txtCliente.text = strCliente.toString()
 
-            val folio = abs(Cotizacion().generaFolio())
+            var folio = abs(Cotizacion().generaFolio())
             txtFolio.text = "Folio: $folio"
         }
 
         @SuppressLint("SetTextI18n")
         fun eventosClic() {
-            btnCalcular.setOnClickListener {
+            btnCalcular.setOnClickListener (View.OnClickListener {
                 val cotizacion = Cotizacion()
 
-                if (txtCliente.text.isEmpty() || txtDescripcion.text.isEmpty() || txtPrecio.text.isEmpty() || txtPorcentaje.text.isEmpty()) {
+                if (txtDescripcion.text.toString().contentEquals("") || txtPrecio.text.toString().contentEquals("") || txtPorcentaje.text.toString().contentEquals("")) {
                     Toast.makeText(this, "Falta capturar algún dato", Toast.LENGTH_SHORT).show()
                 } else {
-                    cotizacion.numCotizacion = Cotizacion().generaFolio()
+                    txtFolio.text = cotizacion.generaFolio().toString()
                     cotizacion.descripcion = txtDescripcion.text.toString()
                     cotizacion.precio = txtPrecio.text.toString().toFloat()
                     cotizacion.porPagInicial = txtPorcentaje.text.toString().toFloat()
 
-                    cotizacion.plazos = when {
-                        rdb12.isChecked -> 12
-                        rdb24.isChecked -> 24
-                        rdb36.isChecked -> 36
-                        rdb48.isChecked -> 48
-                        else -> 12
+                    if(rdb12.isChecked) cotizacion.plazos = 12
+                    if(rdb24.isChecked) cotizacion.plazos = 24
+                    if(rdb36.isChecked) cotizacion.plazos = 36
+                    if(rdb48.isChecked) cotizacion.plazos= 48
+
                     }
 
                     txtPagoInicial.text = getString(R.string.pinicial) + ": " + cotizacion.calcularPagoInicial().toString() + ":"
                     txtTotalFin.text = getString(R.string.tfin)+": " + cotizacion.calcularTotalFin().toString()
                     txtPagoMensual.text = getString(R.string.pmensual)+ ": " + cotizacion.calcularPagoMensual().toString()
-                }
-            }
+                })
+
 
             btnLimpiar.setOnClickListener {
                 txtPagoInicial.text = getString(R.string.pinicial)
@@ -108,10 +109,22 @@ class CotizacionActivity : AppCompatActivity() {
                 txtPrecio.setText("")
                 txtPorcentaje.setText("")
                 rdb12.isChecked = true
+
+                val folio = abs(Cotizacion().generaFolio())
+                txtFolio.text = "Folio: $folio"
             }
 
             btnCerrar.setOnClickListener {
-                finish()
+                val dialog = AlertDialog.Builder(this)
+                dialog.setTitle(getString(R.string.Cliente_app))
+                dialog.setMessage(getString(R.string.confirmar_cierre))
+                dialog.setPositiveButton(getString(R.string.aceptar)) { _, _ ->
+                    finish()
+                }
+                dialog.setNegativeButton(getString(R.string.cancelar)) { _, _ ->
+                    Toast.makeText(this, getString(R.string.cancelado), Toast.LENGTH_SHORT).show()
+                }
+                dialog.show()
             }
         }
 

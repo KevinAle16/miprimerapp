@@ -11,19 +11,27 @@ class Cotizacion : Serializable {
     var precio: Float = 0.0f
     var plazos: Int = 0
 
-    fun calcularPagoInicial(): Float {
-        return precio * (porPagInicial / 100)
+    internal constructor() {
+        this.numCotizacion = 0
+        this.descripcion = ""
+        this.porPagInicial = 0.0f
+        this.precio=0.0f
+        this.plazos = 0
+    }
+    public fun calcularPagoInicial(): Float {
+        var pagoInicial:Float=0.0f
+        return precio * (this.porPagInicial) / 100
+        return pagoInicial
     }
 
-    fun calcularTotalFin(): Float {
-        return precio - calcularPagoInicial()
+    public fun calcularTotalFin(): Float {
+        return this.precio - this.calcularPagoInicial()
     }
 
-    fun calcularPagoMensual(): Float {
-        return calcularTotalFin() / plazos
+    public fun calcularPagoMensual(): Float {
+        return this.calcularTotalFin() / this.plazos
     }
-
-    fun generaFolio(): Int {
-        return Random(333).nextInt(81001)
+    public fun generaFolio(): Int {
+        return Random(333).nextInt(1001)
     }
 }

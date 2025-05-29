@@ -46,7 +46,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/pinicial"
+            android:hint="@string/po"
             android:inputType="numberDecimal"
             android:textAlignment="textStart"
             android:id="@+id/txtPorcentaje"

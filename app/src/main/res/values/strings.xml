@@ -93,7 +93,8 @@
     <string name="idr">15300.00</string>
     <string name="error_falta_cantidad">Falta capturar la cantidad</string>
 
-    <string name="Cliente_app">MiAppToyota</string>
+    <string name="Cliente_app">COTIZACION de TOYOTA</string>
+    <string name="login_app">LOGIN COTIZACION</string>
 
     <string name="domicilio">Av. del Mar 1200</string>
     <string name="ciudad">Mazatlán Sinaloa</string>
@@ -105,7 +106,7 @@
     <string name="po">Porcentaje de pago Inicial</string>
     <string name="plazos">Plazos</string>
     <string name="pmensual">Pago Mensual</string>
-    <string name="pinicial">porcentage Pago Inicial %</string>
+    <string name="pinicial">Pago inicial</string>
     <string name="tfin">Total a Financiar</string>
 
 
