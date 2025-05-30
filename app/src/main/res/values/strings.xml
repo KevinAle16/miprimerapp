@@ -112,7 +112,7 @@
 
     <string name="ingresar">Ingresar</string>
     <string name="regresar">Regresar</string>
-    <string name="calculos">calcular</string>
+    <string name="calculos">Calculos Cotizacion</string>
 
     <string name="hint_nombre_cliente">Escribe el Nombre del cliente</string>
 

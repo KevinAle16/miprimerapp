@@ -32,6 +32,6 @@ class Cotizacion : Serializable {
         return this.calcularTotalFin() / this.plazos
     }
     public fun generaFolio(): Int {
-        return Random(333).nextInt(1001)
+        return (1..1000).random()
     }
 }
