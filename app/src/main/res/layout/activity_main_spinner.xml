@@ -10,8 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:padding="16dp">
 
     <Spinner
         android:id="@+id/spinnerBicicleta"
@@ -34,19 +34,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="16dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/imageViewBicycle"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:contentDescription="Bicycle Image" />
+                android:contentDescription="@string/tipoBici" />
 
             <TextView
                 android:id="@+id/textViewBicycleType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tipo de bicicleta"
+                android:text="@string/tipoBici"
                 android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="8dp" />
@@ -58,8 +58,24 @@
         android:id="@+id/btnShowBicycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mostrar detalles de la bicicleta"
+        android:text="@string/detallesBicicleta"
         android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/limpiar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnCerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
 </ScrollView>
