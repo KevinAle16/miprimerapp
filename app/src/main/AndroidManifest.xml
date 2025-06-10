@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kaftapp"
         tools:targetApi="31">
+
         <activity
             android:name=".MenuActivity"
             android:exported="true">
@@ -34,14 +35,13 @@
             android:name=".MainActivityMoneda"
             android:exported="true" />
         <activity
-            android:name=".MainActivitySpinner"
-            android:exported="true" />
-
-        <activity
             android:name=".CotizacionActivity"
             android:exported="true" />
         <activity
             android:name=".ClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpinnerActivity"
             android:exported="true" />
     </application>
 

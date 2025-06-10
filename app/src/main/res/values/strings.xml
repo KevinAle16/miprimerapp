@@ -108,20 +108,20 @@
     <string name="_36_meses">36 Meses</string>
     <string name="_48_meses">48 Meses</string>
 
-    <string name="tipoBici">Descripcion</string>
-    <string name="seleccioneBici">Seleccione un tipo de bicicleta</string>
-    <string name="detallesBicicleta">Mostrar detalles de la bicicleta</string>
-    <string-array name="bicicletas">
-        <item>@string/seleccioneBici</item>
-        <item>Bicicleta de montaña</item>
-        <item>Bicicleta de carretera</item>
-        <item>Bicicleta BMX</item>
-    </string-array>
-    <string-array name="descripcion_bicicletas">
-        <item />
-        <item>Ideal para caminos irregulares, con suspensión y llantas anchas para terrenos difíciles.</item>
-        <item>Diseñada para velocidad y largas distancias en pavimento, con cuadro ligero y llantas delgadas.</item>
-        <item>Perfecta para acrobacias y saltos en rampas o pistas urbanas, muy resistente y compacta.</item>
-    </string-array>
+    <string name="spinner_name">Spiner Personalizado</string>
+    <string name="itemFraces">Categorias de frases</string>
+    <string name="itemAgradecimiento">Agradecimiento</string>
+    <string name="itemAmor">Amor</string>
+    <string name="itemNewYear">Año Nuevo</string>
+    <string name="itemCanciones">Canciones</string>
+    <string name="msgFrace">Desplegar</string>
+    <string name="msgAgradecimiento">Prueba dar las Gracias</string>
+    <string name="msgAmor">Enamora con estas fraces</string>
+    <string name="msgNewYear">Feliz año nuevo</string>
+    <string name="msgCanciones">Escucha solo lo mejor</string>
+    <string name="msgSeleccion">Se ha seleccionado</string>
+    <string name="msgDescripcion">Selecciona una cotegoria</string>
+    <string name="categorias">Categorias</string>
+    <string name="mensaje">Mensaje</string>
 
 </resources>
