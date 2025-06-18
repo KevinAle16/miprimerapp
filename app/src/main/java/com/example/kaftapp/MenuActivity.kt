@@ -64,7 +64,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         })
         crvSpinner.setOnClickListener(View.OnClickListener{
-            val intent = Intent(this,MainActivitySpinner::class.java)
+            val intent = Intent(this,SpinnerActivity::class.java)
             startActivity(intent)
         })
 

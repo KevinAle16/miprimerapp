@@ -8,13 +8,11 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import java.util.zip.Inflater
 
-class spinnerAdapter (
+class spinnerAdapter(
     private val context: Context,
     private val groupid: Int,
-    id:Int,
-    private val list :ArrayList<itemData>
+    private val list:ArrayList<itemData>
 ): ArrayAdapter<itemData>(context,groupid,list){
 
     private val inflater:LayoutInflater=
@@ -22,20 +20,23 @@ class spinnerAdapter (
                 LayoutInflater
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val itemView = inflater.inflate(groupid,parent,false)
-
-        val imagen = itemView.findViewById<ImageView>(R.id.imgCategoria)
-        imagen.setImageResource(list[position].imageId)
-
-        val textCategoria = itemView.findViewById<TextView>(R.id.lblCategorias)
-        textCategoria.text = list[position].txtCategoria
-
-        val textDescripcion = itemView.findViewById<TextView>(R.id.lblDescripcion)
-        textDescripcion.text = list[position].txtDescripcion
-        return itemView
+        return getCustomView(position, parent)
     }
 
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
-        return super.getDropDownView(position, convertView, parent)
+        return getCustomView(position, parent)
+    }
+
+    private fun getCustomView(position: Int, parent: ViewGroup): View {
+        val view = inflater.inflate(groupid, parent, false)
+        val image = view.findViewById<ImageView>(R.id.imgCategoria)
+        val lblCategoria = view.findViewById<TextView>(R.id.lblCategorias)
+        val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
+
+        image.setImageResource(list[position].imageId)
+        lblCategoria.text = list[position].txtCategoria
+        lblDescripcion.text = list[position].txtDescripcion
+
+        return view
     }
 }
