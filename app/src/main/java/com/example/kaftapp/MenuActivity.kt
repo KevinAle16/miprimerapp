@@ -17,6 +17,7 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var crvMoneda : CardView
     private lateinit var crvCotizacion : CardView
     private lateinit var crvSpinner : CardView
+    private lateinit var crvSpinnermod : CardView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +42,7 @@ class MenuActivity : AppCompatActivity() {
         crvConversion = findViewById(R.id.crvConversion) as CardView
         crvSpinner = findViewById(R.id.crvSpinner) as CardView
         crvMoneda = findViewById(R.id.crvMoneda) as CardView
+         crvSpinnermod = findViewById(R.id.crvSpinnermod) as CardView
     }
     fun eventosClic(){
         crvHola.setOnClickListener(View.OnClickListener{
@@ -65,6 +67,10 @@ class MenuActivity : AppCompatActivity() {
         })
         crvSpinner.setOnClickListener(View.OnClickListener{
             val intent = Intent(this,SpinnerActivity::class.java)
+            startActivity(intent)
+        })
+        crvSpinnermod.setOnClickListener(View.OnClickListener{
+            val intent = Intent(this,listViewsActivity::class.java)
             startActivity(intent)
         })
 

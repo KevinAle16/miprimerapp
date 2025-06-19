@@ -124,4 +124,22 @@
     <string name="categorias">Categorias</string>
     <string name="mensaje">Mensaje</string>
 
+    <string name="listado_alumnos">Listado de Alumnos</string>
+
+    <string name="alumno1_nombre">Kevin alejandrop Fuentes Talamantes</string>
+    <string name="alumno1_matricula">20170234545</string>
+    <string name="alumno1_carrera">Ing. Tec. Información</string>
+
+    <string name="alumno2_nombre">Jorge Samudio Osuna</string>
+    <string name="alumno2_matricula">2017030432</string>
+    <string name="alumno2_carrera">Ing. Tec. Información</string>
+
+    <string name="alumno3_nombre">Marco Sauceda Herrera</string>
+    <string name="alumno3_matricula">2084763547</string>
+    <string name="alumno3_carrera">Ing. Tec. Información</string>
+
+    <string name="alumno4_nombre">Jesus Aguilar Brum </string>
+    <string name="alumno4_matricula">2018048762</string>
+    <string name="alumno4_carrera">Ing. Tec. Información</string>
+
 </resources>
