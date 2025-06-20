@@ -142,4 +142,8 @@
     <string name="alumno4_matricula">2018048762</string>
     <string name="alumno4_carrera">Ing. Tec. Información</string>
 
+    <string name="alumno5_nombre">Ulices Avila </string>
+    <string name="alumno5_matricula">20129487634</string>
+    <string name="alumno5_carrera">Ing. Tec. Información</string>
+    <string name="cardlistview">List View</string>
 </resources>

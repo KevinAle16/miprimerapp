@@ -67,7 +67,43 @@ class listViewsActivity : AppCompatActivity() {
                 getString(R.string.alumno4_carrera),
                 getString(R.string.alumno4_matricula),
                 R.drawable.alumno4
+            ),
+            alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
+            ),
+            alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
+            ),
+            alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
+            ),
+            alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
+            ),
+            alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
+            ),  alumnoData(
+                getString(R.string.alumno5_nombre),
+                getString(R.string.alumno5_carrera),
+                getString(R.string.alumno5_matricula),
+                R.drawable.alumno5
             )
+
         )
 
         adapter = listViewsAdapter(this, R.layout.listviews, alumnos)

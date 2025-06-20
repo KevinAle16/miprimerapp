@@ -297,14 +297,14 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/spinner" />
+                    android:src="@drawable/listview" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/cardHola"
+                    android:text="@string/cardlistview"
                     android:textColor="@color/rojo" />
             </LinearLayout>
             </androidx.cardview.widget.CardView>

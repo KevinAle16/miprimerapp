@@ -10,10 +10,9 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class listViewsAdapter(
-
-    private var context: Context,
-    private var groupid: Int,
-    private var list: ArrayList<alumnoData>
+    private val context: Context,
+    private val groupid: Int,
+    private val list: ArrayList<alumnoData>
 
 ): ArrayAdapter<alumnoData>(context, groupid, list) {
     private val inflater: LayoutInflater =
